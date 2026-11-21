@@ -978,6 +978,16 @@
 		)
 		(uuid "0b62e5de-1a4c-43fc-8572-36f67b12e847")
 	)
+	(text "TODO: Loopback M7 -> A53"
+		(exclude_from_sim no)
+		(at 140.462 34.036 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "ecefa362-2e94-4d8f-9529-2ef39fcab0e0")
+	)
 	(junction
 		(at 160.655 64.77)
 		(diameter 0)

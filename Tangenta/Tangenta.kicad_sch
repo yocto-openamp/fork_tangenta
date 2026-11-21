@@ -1263,16 +1263,6 @@
 		)
 		(uuid "2b366345-ce2f-4e01-817c-bd57a49e410e")
 	)
-	(label "1V8"
-		(at 98.425 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3a7639f5-5c44-429b-a378-2373539a70d7")
-	)
 	(label "GND"
 		(at 277.495 273.685 0)
 		(effects
@@ -1292,16 +1282,6 @@
 			(justify right bottom)
 		)
 		(uuid "5accb911-8b86-4d5e-b308-63f317bbae75")
-	)
-	(label "GND"
-		(at 98.425 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "726aaf1e-11e8-4a97-b9b9-7af785e95610")
 	)
 	(label "1V8"
 		(at 98.425 64.77 180)
@@ -1352,16 +1332,6 @@
 			(justify right bottom)
 		)
 		(uuid "8ee35669-243a-4809-a5ae-b902fc2c7f9b")
-	)
-	(label "5V"
-		(at 98.425 123.19 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b021b76f-dc94-43b0-988b-c194866957c8")
 	)
 	(label "CHASSIS"
 		(at 287.655 204.47 180)
@@ -3014,48 +2984,6 @@
 				(justify right)
 			)
 		)
-		(pin "DSI{D0_N D0_P D1_N D1_P D2_N D2_P D3_N D3_P CLK_N CLK_P nRST INT HPD}"
-			output
-			(at 188.595 90.17 0
-			)
-			(uuid "e441f190-c10a-47e3-93ab-a8597ad857d9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2S{BCLK SYNC D_OUT}" output
-			(at 188.595 92.71 0)
-			(uuid "20dd7875-0da0-4bbd-b36d-90290b5cde25")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2C_1{SDA SCL}" output
-			(at 188.595 95.25 0)
-			(uuid "2ee9a0b4-e58f-44fd-976e-31a07dcc1b73")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "I2C_2_DSI{SDA SCL}" output
-			(at 188.595 97.79 0)
-			(uuid "1a7ceb6e-0ca6-475e-a98a-72ec204fd4e7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GND" bidirectional
 			(at 107.315 29.845 180)
 			(uuid "df35c618-4c42-4ef8-8225-578f38e8ec64")
@@ -3079,36 +3007,6 @@
 		(pin "SMBUS{SDA SCL}" output
 			(at 188.595 205.105 0)
 			(uuid "a29977d1-8b11-4dac-986b-79f463b20d19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PCIE_X1_DATA{RX_P RX_N TX_P TX_N}" output
-			(at 188.595 121.92 0)
-			(uuid "b2cc2341-3de5-4a29-bb51-f9fc49c60969")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PCIE_X1_CLK{P N}" output
-			(at 188.595 124.46 0)
-			(uuid "0be19272-60da-4f12-81e8-1afe59f1006a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PCIE_X1_CTRL{nRST nWAKE}" output
-			(at 188.595 127 0)
-			(uuid "5bf61f3c-8cbd-4dfa-b9e3-7b20a99bdc05")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,16 +3054,6 @@
 				(justify left)
 			)
 		)
-		(pin "UART_1{RXD TXD RTS CTS}" output
-			(at 107.315 135.255 180)
-			(uuid "535ae758-d316-441d-8bf3-dc037d3d4427")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "UART_2{RXD TXD RTS CTS}" output
 			(at 107.315 100.965 180)
 			(uuid "2239a28e-187b-4344-a872-1c209d34404d")
@@ -3186,69 +3074,9 @@
 				(justify left)
 			)
 		)
-		(pin "CAN_2{RX TX}" output
-			(at 107.315 177.8 180)
-			(uuid "3e6f1fe6-7a42-47b0-aa70-01a759b4904a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CAN_1{RX TX}" output
-			(at 107.315 175.26 180)
-			(uuid "d0738dc9-8ab7-452e-a842-8341f0fa46e3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SD{D0 D1 D2 D3 CLK CMD nCD PWR_EN}" output
-			(at 188.595 68.58 0)
-			(uuid "2ef80f96-b052-445d-b941-528a74dee587")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "PWR" input
-			(at 188.595 34.29 0)
-			(uuid "f890c934-365d-41f9-a155-10eb9e5780b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RST" input
-			(at 188.595 31.75 0)
-			(uuid "08dfab7c-0192-45d8-b4bc-2f8711ef0561")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "JTAG{TMS TCK TDO TDI nTRST VREF}" output
 			(at 107.315 52.705 180)
 			(uuid "f700a8be-2f4c-4544-9814-c30a447f734f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PWM{1 2}" output
-			(at 107.315 210.185 180)
-			(uuid "b2e3a98b-9eb1-461e-aad5-53fe903f2a7d")
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -154,6 +154,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Put on one sheet."
+		(exclude_from_sim no)
+		(at 200.914 67.818 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "5cd024ef-3ba8-4c41-bf4e-3f779f0fed8a")
+	)
+	(text "TODO: Reconnect ETH."
+		(exclude_from_sim no)
+		(at 202.184 59.436 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "955541c9-fed0-4ced-8d1f-a8f86fcbaf51")
+	)
 	(bus_entry
 		(at 80.01 213.995)
 		(size 2.54 -2.54)

@@ -2512,6 +2512,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Remove USB Hub and reconnect on USB connector..."
+		(exclude_from_sim no)
+		(at 122.936 72.136 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "81e0789b-fd79-408b-b1f4-fedffd065136")
+	)
 	(junction
 		(at 229.87 31.242)
 		(diameter 0)
