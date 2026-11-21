@@ -61,6 +61,8 @@
     ],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -106,7 +108,23 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -135,6 +153,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -153,6 +172,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -172,9 +192,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -293,17 +316,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -494,11 +528,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -521,6 +558,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -553,6 +591,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 1.0,
         "via_drill": 0.5,
         "wire_width": 6
@@ -571,6 +610,7 @@
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -589,6 +629,7 @@
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -607,6 +648,7 @@
         "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -625,6 +667,7 @@
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.254,
+        "tuning_profile": "",
         "via_diameter": 1.0,
         "via_drill": 0.5,
         "wire_width": 6
@@ -643,6 +686,7 @@
         "priority": 4,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -661,6 +705,7 @@
         "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -679,6 +724,7 @@
         "priority": 6,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -697,6 +743,7 @@
         "priority": 7,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -715,6 +762,7 @@
         "priority": 8,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -733,6 +781,7 @@
         "priority": 9,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.254,
+        "tuning_profile": "",
         "via_diameter": 1.0,
         "via_drill": 0.5,
         "wire_width": 6
@@ -751,6 +800,7 @@
         "priority": 10,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -769,6 +819,7 @@
         "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -787,6 +838,7 @@
         "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -805,6 +857,7 @@
         "priority": 13,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -823,6 +876,7 @@
         "priority": 14,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -841,6 +895,7 @@
         "priority": 15,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
@@ -859,13 +914,14 @@
         "priority": 16,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
+        "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.2,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -1756,6 +1812,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -1827,6 +1887,7 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1834,6 +1895,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -1857,6 +1919,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1865,24 +1928,21 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "Tangenta.kicad_sch",
+        "name": "Tangenta",
+        "uuid": "358d1bcf-7599-4352-8c4d-baa18a5f09e6"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
       "358d1bcf-7599-4352-8c4d-baa18a5f09e6",
-      "Root"
-    ],
-    [
-      "d6c05402-162e-441f-bed8-be7996260fb4",
-      "PowerSupply"
-    ],
-    [
-      "8215796b-9611-4f43-bcc5-319f8414b8a6",
-      "ChassisButtons"
-    ],
-    [
-      "9b1f6f94-444c-4c59-8de9-290bde336856",
-      "PCIExpress"
+      "Tangenta"
     ],
     [
       "e56d8c10-557c-47b7-a4d3-5b3b43580080",
@@ -1893,72 +1953,16 @@
       "USB"
     ],
     [
-      "311e518b-ff64-43ec-9466-21ebfb76bf13",
-      "MicroSD"
-    ],
-    [
-      "f1c5822c-e7b8-40ae-bab0-71fd1c2cfc7c",
-      "MobileModem"
-    ],
-    [
       "2bb52479-7b35-496d-9807-27e706c6ef7b",
       "Ethernet"
-    ],
-    [
-      "6a8c68b5-4a7d-449e-86f6-34ced6d1cb55",
-      "DSI_HDMI"
-    ],
-    [
-      "98e3b24f-9927-4339-b8fd-9deea91a522a",
-      "RS_485_422"
-    ],
-    [
-      "b5394a48-5ef8-44c9-9d56-604d4ce6d7c8",
-      "CANbus"
     ],
     [
       "db297b0b-35f2-4e86-892c-83973f1ac2db",
       "Toradex"
     ],
     [
-      "da6cda23-cac5-483b-bd71-d8f2b2c13669",
-      "COMBO_RJ45"
-    ],
-    [
-      "79105fff-2111-4675-95ec-60397c562e45",
-      "PCIE_Slot_1"
-    ],
-    [
-      "90adec24-c816-45b1-84de-df0a62ed06ad",
-      "PCIE_Slot_2"
-    ],
-    [
-      "95d5fed9-c617-43f1-96e2-65308e862f66",
-      "PCIE_Slot_3"
-    ],
-    [
-      "04648235-6c5e-4915-ab80-8fea22048f3c",
-      "PCIE_Switch"
-    ],
-    [
       "107b1895-3302-473d-bd1c-b123cf003d25",
       "Ethernet_RJ45_Port_1"
-    ],
-    [
-      "a173b5ed-15e0-48c8-8013-e94d7cc777b3",
-      "Ethernet_RJ45_Port_2"
-    ],
-    [
-      "5dd23ea2-ad33-4f2c-a45e-3d59d95f0b2c",
-      "Ethernet_RJ45_Port_3"
-    ],
-    [
-      "8c8da075-62e5-4ec4-9abc-b27287749d5c",
-      "Ethernet_SFP_Port_4"
-    ],
-    [
-      "c653b84e-94ee-4be9-b47c-8c767f88973e",
-      "Ethernet_Switch"
     ],
     [
       "d8a5cc68-befd-4a97-adf5-0d42060d054f",
@@ -1969,29 +1973,15 @@
       "UART_Terminal"
     ],
     [
-      "96e01dc6-7803-4642-812e-1845a7add5da",
-      "CAN_Channel_1"
-    ],
-    [
-      "9d7e074a-447f-4471-b1b0-91eb27649d54",
-      "CAN_Channel_2"
-    ],
-    [
-      "4c10d55d-61fc-4b02-a77f-04d975295bf4",
-      "RTC"
-    ],
-    [
-      "77fcdbef-6473-4a17-8292-00f2f46bc845",
-      "DualCMOS"
-    ],
-    [
       "9473c61f-5125-4990-b2e3-10b596e2b9c8",
       "JTAG"
-    ],
-    [
-      "19b4ac3b-c2a1-43b1-8d7b-1ca5ac2c79ee",
-      "FANs"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
